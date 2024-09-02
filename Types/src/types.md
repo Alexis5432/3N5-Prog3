@@ -1,0 +1,9 @@
+val a = 1                                   // type est un int            
+val aa = 1L                                 // type est un string
+val aaa = a * 25 + aa * 100                 // type est un string
+val b = 1.0                                 // type est un int
+val c = "1"                                 // type est un string
+val d = true                                // type est un bool
+val laChose = c + b                         // type est var
+val k = listOf("1", "2", "3")               // type est un list
+val l = mutableListOf(true, false, true)    // type est un list
