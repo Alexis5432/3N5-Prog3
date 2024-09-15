@@ -1,6 +1,6 @@
 package org.example
 import java.io.File
-import java.io.IOException
+
 
 fun main(){
     val fichier = File("vide.txt")
