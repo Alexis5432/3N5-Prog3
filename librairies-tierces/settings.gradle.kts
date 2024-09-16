@@ -1,0 +1,2 @@
+rootProject.name = "librairies-tierces"
+
