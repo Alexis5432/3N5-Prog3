@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation ("commons-validator:commons-validator:1.9.0")
     implementation("org.jsoup:jsoup:1.18.1")
     testImplementation(kotlin("test"))
 }
