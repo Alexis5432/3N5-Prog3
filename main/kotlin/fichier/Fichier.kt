@@ -2,9 +2,8 @@ package fichier
 
 import java.io.File
 
-fun main(args: Array<String>) {
+fun main() {
     // Tu peux tester tes fonctions en les appellants ici.
-    ecrire(args)
     lire()
 
 
