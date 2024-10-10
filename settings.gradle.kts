@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "tapeLeLapin"
 include(":app")
- 
+include(":app")
