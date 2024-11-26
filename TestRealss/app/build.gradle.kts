@@ -1,14 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace = "org.bourgeois"
+    namespace = "org.Bourgeois"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "org.bourgeois"
+        applicationId = "org.Bourgeois"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -33,13 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    viewBinding {
-        enable = true
-    }
-    buildFeatures {
-        viewBinding = true
-    }
-
 }
 
 dependencies {

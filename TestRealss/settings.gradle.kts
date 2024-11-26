@@ -19,7 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "tapeLeLapin"
+rootProject.name = "Test"
 include(":app")
-include(":app")
-include(":app")
+ 
