@@ -18,9 +18,12 @@ class PersonneAdapter : ListAdapter<Personne, PersonneAdapter.PersonneItemViewHo
             binding.tvPrenom.text = item.nom
             binding.tvvaleur.text = item.type
             // Attention! Il faut toujours s'assurer qu'on assigne une String.
+
             binding.tvElement.setOnClickListener {
                 val intent: Intent = Intent(binding.root.context, SecondActivity::class.java)
+
                 // On ajoute le nom de l'élément à l'intent
+                intent.putExtra("monExtra", item.type)
                 // Démarrer l'activité SecondActivity
                 binding.root.context.startActivity(intent)
             }
