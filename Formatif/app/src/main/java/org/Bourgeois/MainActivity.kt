@@ -1,5 +1,6 @@
 package org.Bourgeois
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setupRecycler()
         fillRecycler()
+        title = "VERSIONS"
+        binding.main.setOnClickListener{
+            val monIntent = Intent(this, SecondActivity::class.java)
+            startActivity(monIntent)
+        }
     }
     private fun setupRecycler() {
         adapter = PersonneAdapter() // Créer l'adapteur
@@ -34,12 +40,12 @@ class MainActivity : AppCompatActivity() {
     }
     private fun fillRecycler() {
         val items: MutableList<Personne> = mutableListOf(
-            Personne("Android 1.1","Petit Four"),
-            Personne("Android 1.5", "Cupkace"),
-            Personne("Android 2.0", "Eclaire"),
-            Personne("Android 3.0", "HoneyComb"),
-            Personne("Android 4.0", "Ice cream sandwich"),
-            Personne("Android 5.0", "Lollipop")
+            Personne("Android 1.1","Petit Four",1),
+            Personne("Android 1.5", "Cupkace",2),
+            Personne("Android 2.0", "Eclaire",3),
+            Personne("Android 3.0", "HoneyComb",4),
+            Personne("Android 4.0", "Ice cream sandwich",5),
+            Personne("Android 5.0", "Lollipop",6)
 //
         )
 //        for (i in 1..10000) {
